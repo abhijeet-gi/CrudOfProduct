@@ -1,0 +1,27 @@
+<h1>Welcome to Curd Operation</h1>
+
+
+<hr>
+<a routerLink="ptab"  >DisplayTab</a><br>
+<a routerLink="plist" >DisplayList</a>
+<!--
+<hr>
+<form #frm="ngForm" (ngSubmit)="submitForm(frm.value)">
+    Id:<input type="text" #id="ngModel" name="id" ngModel required ><br>
+    <div *ngIf="id.errors ( nm.dirty || nm.touched )">
+        Pls Enter Id It can not be Empty
+    </div>
+
+    Name:<input type="text" #nm="ngModel"name="nm" ngModel required minlength="3"><br>
+    <div *ngIf="nm.errors && ( nm.dirty || nm.touched )">
+        <div [hidden]="!nm.errors.required">
+            Pls Enter Name It can not be Empty
+        </div>
+        <div [hidden]="!nm.errors.minlength">
+            Pls Enter min length 3
+        </div>
+    </div>
+    <button type="submit" name="btn" [disabled]="!frm.valid">Submit</button>
+</form>-->
+<hr>
+<router-outlet ></router-outlet>
